@@ -4,9 +4,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>SearchOn</title>
+<title>Insert title here</title>
 </head>
 <body>
-
+<%@include file="openPage.html" %>
+	<%
+		String qry=request.getParameter("qry");		
+		int k=Integer.parseInt(request.getParameter("srch"));
+		
+		if(qry.length()==0|| k==0)			
+				out.print("enter correct input");
+		else
+			switch(k)
+			{
+			case 1 :
+				
+				response.sendRedirect("https://www.google.co.in/#q="+qry);
+				break;
+			case 2 :
+				response.sendRedirect("https://www.youtube.co.in/#q="+qry);
+				break;
+			}
+	%>
 </body>
 </html>

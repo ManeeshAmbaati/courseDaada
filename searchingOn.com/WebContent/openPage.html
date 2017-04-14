@@ -4,17 +4,43 @@
 <meta charset="ISO-8859-1">
 <title>SearchOn</title>
 </head>
-<body>
-	<p>now u can <b>SearchOn</b> everything here :p</p><br>
-	<br>
-	<form>
-	U'r Query is:<input type="text" name="qry"/><br>
-	<b>on</b><br>
-	<input id="k" type="radio" value="google" name="srch"/>Google<br>
-	<input id="k" type="radio" value="images" name="srch"/>Images<br>
-	<input id="k" type="radio" value="youtube" name="srch"/>Videos<br>
-	<input type="submit" value="search">
-		
-	</form>
+<style>
+	button {
+    background-color: #39CCCC;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 10%;   
+}
+button:hover {
+    opacity: 0.5;
+}
+body{
+	background-image:url("imgs/logo.png");
+	background-size: 10%;
+	background-repeat:repeat-x;
+}
+form{
+ margin: .5cm 2cm 1cm 1cm; 
+ background-image:url("imgs/f1.png");
+ background-size: 100% 100%; 
+ border: 3px solid #006064;
+}
+</style>
+<body >
+<form action="main.jsp" >
+ 	 <input type="text"  placeholder="Enter to search" name="qry" style="width: 75%;	margin: .5cm 0.5cm 0cm .5cm; padding: 10px 10px;display: inline-block;border: 2.5px solid #BBDEFB;box-sizing: border-box;" />
+	<select name="srch" style="width: 30%;	margin: .5cm 0cm 0.5cm 0.5cm; padding: 10px 10px;display: inline-block;border: 2.5px solid #BBDEFB;box-sizing: border-box;">
+		<option value="0">Select search Engine</option>
+		<option value="1">Google</option>
+		<option value="2">YouTube</option>
+		<option value="yh">yahoo!</option>
+		<option value="fb">FaceBook</option>
+		<option value="img">Images</option>
+		<option value="tw">Twitter</option>
+	</select>
+	<button type="submit" name="scon" style="float:right; margin: 0.5cm 300px 0 0;">searchON </button>
+</form>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="ISO-8859-1">
 <style>
 body {
-    background-image: url("b3.png");
+    background-image: url("imgs/b3.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -15,6 +15,7 @@ form {
 
 input[type=text], input[type=password], select[type=text]{
     width: 90%;
+    margin: 0cm 0cm 0cm .5cm;
     padding: 10px 10px;
     display: inline-block;
     border: 1px solid #BBDEFB;
@@ -24,7 +25,7 @@ button {
     background-color: #2196F3;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: .5cm .5cm 0.5cm 1.5cm;
     border: none;
     cursor: pointer;
     width: 80%;
@@ -37,10 +38,11 @@ button:hover {
 <title>SignUp</title>
 </head>
 <body>
-<center >
+
 <form >
-<div style="overflow-y:scroll;height:450px;">
-<input type="text" style="margin:20px 0 0 0" placeholder="prefix" size="5" name="prefix"/><br><br>
+<div style="overflow-y:scroll;height:400px;">
+
+<input type="text" style="margin: .5cm 0cm 0cm .5cm;" placeholder="prefix" size="5" name="prefix"/><br><br>	
 <input type="text" placeholder="First Name" name="fname"/><br><br>
 <input type="text" placeholder="Last Name" name="lname"/><br><br>
 <input type="text" placeholder="Email" name="mail"/><br><br>
@@ -49,7 +51,7 @@ button:hover {
 <input type="text" name="dob" size="10" placeholder="dd/mm/yyyy"><br><br>
 <input type="text" size="10" placeholder="Phone Number" name="phone"/><br><br>
 
-<select placeholder="Gender" style="width:90%;padding:12px 20px;display:inline-block;border:2px solid #BBDEFB;box-sizing:border-box;">
+<select style="width:90%;padding:12px 20px;display:inline-block;border:2px solid #BBDEFB;box-sizing:border-box;margin: 0cm 0cm 0cm .5cm;">
 	<option value="g">--</option>
 	<option value="m">Male</option>
 	<option value="f">Female</option>
@@ -58,7 +60,13 @@ button:hover {
 <button type="submit" >Register</button>
 </div>
 </form>
-</center>
+
+
+<a href=""style="text-align:center">
+	<img style="width:150px; margin: .2cm 0 0 3cm;" alt="login" src="imgs/lg1.png">
+</a><b style="text-align:center"> if ur already registered </b>
+
+
 
 </body>
 </html>
