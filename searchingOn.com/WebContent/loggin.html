@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+    background-image: url("b2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+form {
+	 margin: 4.8cm 2cm 0.2cm 15cm;
+    border: 3px solid #006064;
+}
+
+input[type=text], input[type=password], select[type=text]{
+    width: 90%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #BBDEFB;
+    box-sizing: border-box;
+}
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+button:hover {
+    opacity: 0.6;
+}
+</style>
+
+<title>SignUp</title>
+</head>
+<body>
+<center >
+<form >
+<div style="overflow-y:scroll;height:450px;">
+<input type="text" style="margin:20px 0 0 0" placeholder="prefix" size="5" name="prefix"/><br><br>
+<input type="text" placeholder="First Name" name="fname"/><br><br>
+<input type="text" placeholder="Last Name" name="lname"/><br><br>
+<input type="text" placeholder="Email" name="mail"/><br><br>
+<input type="password" placeholder="Password"name="p1"><br><br>
+<input type="password" placeholder="conform-password"name="p2"><br><br>
+<input type="text" name="dob" size="10" placeholder="dd/mm/yyyy"><br><br>
+<input type="text" size="10" placeholder="Phone Number" name="phone"/><br><br>
+
+<select placeholder="Gender" style="width:90%;padding:12px 20px;display:inline-block;border:2px solid #BBDEFB;box-sizing:border-box;">
+	<option value="g">--</option>
+	<option value="m">Male</option>
+	<option value="f">Female</option>
+	<option value="o">Other</option>
+</select>
+<button type="submit" >Register</button>
+</div>
+</form>
+</center>
+
+</body>
+</html>
